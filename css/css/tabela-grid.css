@@ -1,0 +1,84 @@
+  
+/* Mora da bude 100% */
+#grid1b{
+    /* margin: 3em 0; */
+    width: 100%;
+    background: #ec9a57;
+    border-color: #f0e6c7!important;
+}
+
+/* Ceo box */
+#gbox_grid1b{
+    margin: 3em auto!important;
+    width: 100%!important;  
+    border-color: #f0e6c7!important;
+}
+
+th,
+.ui-jqgrid > .ui-jqgrid-view *,
+.ui-jqgrid > .ui-jqgrid-view *:before,
+.ui-jqgrid > .ui-jqgrid-view *:after{
+    border-color: #f0e6c7!important;
+}
+
+@media(min-width:720px){
+    #gbox_grid1b{
+        margin: 0 auto;
+        width: 80%!important;  
+    }
+}
+
+/* Heder */
+.ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-bootstrap-corner-top{
+    background: black;
+    text-align: center;
+    font-weight: 600;
+    /* font-size: 3em; */
+}
+
+/* Naslov */
+.ui-jqgrid-title{
+    color: #f0e6c7;
+    font-size: 2em!important;
+}
+/* Malo u tabeli */
+.ui-jqgrid.ui-jqgrid-bootstrap > .ui-jqgrid-view .btn,
+.ui-jqgrid.ui-jqgrid-bootstrap > .ui-jqgrid-pager .btn {
+    /* font-size: 12px; */
+    color: #f0e6c7  ;
+    margin-right: 25px;
+    margin-top: -13px;
+}
+.ui-jqgrid .ui-jqgrid-titlebar > .ui-jqgrid-titlebar-close > span.fa,
+.ui-jqgrid .ui-jqgrid-titlebar > .ui-jqgrid-titlebar-close > span.fa,
+.ui-jqgrid .ui-jqgrid-titlebar > .ui-jqgrid-titlebar-close > span.glyphicon {
+	/*  the values below are based on the difference between the
+		font-size of fa-icon and the font size of the parent element */
+        font-size: 2em;
+}
+
+/* Ceo panel */
+.panel-info{
+    margin: 0 auto;
+    width: 100%!important;
+ 
+}
+
+/* Prvi glavni red */
+.ui-jqgrid-hdiv{
+    width: 100%!important;
+    background: #f0e6c7!important;
+}
+
+.ui-jqgrid.ui-jqgrid-bootstrap > .ui-jqgrid-view .btn{
+    border: none;
+}
+
+/* Tabela */
+.ui-jqgrid .table{
+    width: 100%!important;
+    font-size: 1.3em;
+}
+.ui-jqgrid .ui-jqgrid-bdiv{
+    width: 100%!important;
+}

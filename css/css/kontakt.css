@@ -1,0 +1,90 @@
+ .jumbotron{
+    height: 100vh;
+    background: 
+        linear-gradient(to top,transparent, rgb(0, 0, 0)),
+        #fff url(../imgs/galerija/20.jpg) no-repeat center 50%/cover;
+    background-attachment: fixed;  
+  }
+
+.kontakt{
+    text-align: center;
+    color: #858080;
+    font-size: 1.5rem;
+}
+.dugmePosalji{
+     text-align: center;
+}
+
+.posalji{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    background-color:rgba(128, 125, 125, 0.623);
+    border: 2px solid rgb(58, 57, 57);
+}
+
+.form-group{
+    color: #fff!important;
+}
+
+input,textarea,select{
+    color: #fff!important;
+    background-color: #17a3b8d7!important; /* smanjila sam malo boju,proveriti */
+    border-color: #17a2b8!important;
+}
+
+/*postavljeno za ime i prezime dok se kuca*/
+.form-line-active input:focus, .form-line-active textarea:focus{
+    border: 1px solid #d0d0d0!important;
+    box-shadow: 0 0 3px #fff!important;
+    /* -moz-boc-shadow: 0 0 3px #fff!important; */
+    -webkit-box-shadow: 0 0 3px #fff!important;
+}
+
+
+form{
+    margin: 0 100px;
+}
+
+label{
+    color: rgb(151, 140, 140);
+    font-size: 1.5rem;
+}
+
+h1{
+    color: #d0d0d0;
+}
+
+::placeholder{
+    color: #d0d0d0!important;
+}
+
+/* Validation */
+   
+.errorName,
+.errorSurname,
+.errorNaslov,
+.errorOption,
+.errorEmail,
+.errorPoruka{
+    color: red;
+    visibility: hidden;
+    text-align: left;
+    /* margin-left: 10px; */
+}
+
+.alert{
+    position:fixed;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    opacity: 0;
+    transition: opacity .4s;
+    z-index: 20;
+}
+
+
+/* ::selection{
+    background: #17a3b8d7!important;
+} */
+

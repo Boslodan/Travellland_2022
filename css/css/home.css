@@ -1,0 +1,96 @@
+ body{
+    margin: 0;
+    width: 100%;
+    background: #000;
+    overflow-x: hidden;
+}
+
+.jumbotron{
+    height: 100vh;
+    background: 
+        linear-gradient(to top,transparent, rgb(0, 0, 0)),
+        #fff url(../imgs/bgImage.jpg) no-repeat center 50%/cover;
+    background-attachment: fixed;  
+}
+
+.card h1{
+    text-decoration-style: wavy;
+}
+
+.logo{
+    transition: all .5s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
+
+.card-img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    filter: blur(0);
+    transition: filter .3s ease-in;
+    border-radius:0px;
+    transform: skewY(-6deg);
+}
+
+.card{
+    width: 100%;
+    border-radius: 0;
+    margin: auto;
+    border: none;
+    text-align: center;
+    background-color: transparent!important;
+}
+
+.naslov{
+    display: none;
+    text-transform: uppercase;
+}
+
+.footer{
+    margin-top: 5em;
+    
+}
+
+/*----Drustvene mreze----*/
+
+#medias{
+    position: fixed;
+    z-index: 10;
+    top:200px;
+    left: 30px;
+    width: 50px;
+    height: 100px;
+    display: none!important;
+}
+
+.media-item{
+    width: 80%;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity .3s linear;
+}
+
+
+
+@media(min-width:960px){
+    .card{
+        width: 80%;
+    }
+    
+    #medias{
+        display: block!important;
+    }
+}

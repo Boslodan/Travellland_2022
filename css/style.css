@@ -1,0 +1,620 @@
+ html, body {
+    height: 100%;
+}
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("../img/pozadina-min.jpg");
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#navbar ul {
+   margin-right: 70px;
+}
+
+#navbar ul li {
+    font-size: 20px;
+    padding-right: 80px;
+}
+
+#navbar a:hover {
+    color: white;
+    background-color: rgb(85, 85, 85);
+    border-radius: 3px;
+}
+
+#navbar h1{
+    margin-top: 3px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logotxt {
+    color: white;
+}
+
+.glavni {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.glavni img {
+    margin-top: 30px;
+    float: left;
+    width: 25%;
+}
+
+
+#jedan {
+    position: relative;
+    height: calc(100vh - 75px);
+    
+}
+
+
+#jedan h2 {
+    color: rgb(255, 255, 255);
+    padding-top: 150px;
+    text-align: center;
+}
+
+.lorem {
+    padding: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#parent1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+#image11 {
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+   
+  
+  }
+
+#image11:hover{
+    opacity: 1;
+}
+
+#image22 {
+    
+    position: absolute;
+    top:0;
+    left: 25%;
+    opacity: 0;
+  }
+
+#image22:hover{
+    opacity: 1;
+}
+
+#image33 {
+ 
+    position: absolute;
+    top:0;
+    left: 50%;
+    opacity: 0;
+    
+   
+  }
+
+#image33:hover{
+    opacity: 1;
+}
+#image44 {
+
+    position: absolute;
+    top:0;
+    left: 75%;
+    opacity: 0;
+  }
+
+#image44:hover{
+    
+    opacity: 1;
+}
+
+.dva img {
+    position:relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.dva {
+    position:relative;
+    display: inline-block;
+    margin-top: 50px;
+    padding-top: -300px;
+    height: 261.75px;
+}
+
+.dva h3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.akcija {
+    display: flex-end;
+    width: 25%;
+}
+
+
+
+.brejk {
+    clear: both;
+}
+
+
+/* Ponuda */
+
+.red {
+    background: #212529;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+.red a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.red a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.ponuda {
+    padding: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.ponuda h4 {
+    padding-bottom: 10px;
+}
+
+.ponuda ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.ponuda ul li {
+    padding-top: 5px;
+}
+
+#tri {
+    margin-top: -21.5px;
+}
+
+/* Vizija */
+
+.vizija {
+    border: solid 1.5pt white;
+    text-align: center;
+}
+
+#srednji {
+    border-left: none;
+    border-right: none;
+}
+
+.vizija h4{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.vizija p  {
+   
+    padding: 6px;
+}
+
+#cetiri {
+    margin-top: 150px;
+
+}
+
+#cetiri .red {
+    background: #212529;
+    color: white;
+   /* color: #212529;*/
+    font-weight: bold;
+}
+
+/*  Forma  */
+
+.polje,
+select,
+textarea {
+    width: 50%;
+    min-width: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ccc;
+}
+
+
+
+.dugme {
+    background-color: #ccc;
+    color: #212529;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+#dugme {
+    
+    width: 100%;
+    text-align: center;
+    min-width: 130px;
+    padding-bottom: 20px;
+}
+
+.r {
+    padding-left: 50px;
+}
+
+
+.form {
+   
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#forma {
+    padding-top: 70px;
+    background: rgba(204, 204, 204, 0.1);
+  
+    width: 100%;
+    justify-content: center;
+}
+
+
+.rezervacija {
+    font-size: 20px;
+    text-shadow: 2px 2px #000;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#vid ,#dodatne {
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+.radiodugmici {
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.checkdugmici {
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    color: white;
+    font-weight: bold;
+}
+
+.radio2 {
+    display: inline-block;
+    text-align: left;    
+}
+
+#datum {
+    width: 100%;
+    text-align: center;
+}
+
+.polje{
+    text-align: center;
+}
+
+.polja{
+    width: 100%;
+    text-align: center;
+}
+
+.date{
+    margin-top: 10px;
+    width:50%;
+    text-align: center;
+  
+   
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ccc;
+}
+
+
+/* Footer */
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 10px 30px;
+
+}
+
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: center;
+}
+
+/* levo */
+
+.footer-distributed .footer-left{
+    padding-top: 20px;
+    width: 40%;
+ 
+
+}
+
+#logofuter {
+    margin-left: 50px;
+}
+
+
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* linkovi */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* centar */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+
+/* desno */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 10px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+    text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+/* Dugme za vracanje na vrh */
+#back2Top {
+    border-radius: 6px;
+
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index:999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+
+    right: 20px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+#back2Top:hover {
+    opacity: 1;
+    background-color: #DDF;
+    color: #000;
+}
+
+
+@media (max-width:768px){
+    #srednji {
+        border: solid 1.5pt white;
+        border-top: none;
+        border-bottom: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+
+    .logotxt {
+        margin: 0 auto;
+    }
+
+    #meni {
+        margin: 0 auto;
+    }
+
+    .nav-item{
+        padding-left: 100px;
+    }
+
+    #lista{
+        text-align: center;
+    }
+
+}

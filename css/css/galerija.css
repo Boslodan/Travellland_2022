@@ -1,0 +1,36 @@
+ #links img{   
+    background-color: rgb(23, 162, 184)!important;
+    opacity: 0.7;
+    transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+}
+
+#links img:hover{
+    opacity: 1;
+}
+
+.slides,
+.title,
+.prev,
+.next,
+.close,
+.play-pause{
+    color: #17a2b8!important;
+}
+
+.prev,
+.next{
+    border-color: rgb(23, 162, 184)!important;
+}
+
+h1{
+    color: #d0d0d0;
+}
+
+.jumbotron{
+    background: 
+        linear-gradient(to top,transparent, rgb(0, 0, 0)),
+        #fff url(../imgs/galerija/5.jpg) no-repeat center 50%/cover;
+    background-attachment: fixed;
+}

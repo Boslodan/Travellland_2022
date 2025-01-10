@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="shortcut icon" href="img/logo.ico" />
+  <title>Travelland</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+
+
+  <script>
+
+    //<![CDATA[
+    $(function () {
+        "use strict";
+        $("#grid1b").jqGrid({
+            colModel: [
+                { name: "name", label: "Destinacija" },
+                { name: "invdate", label: "Datum", align: "center", sorttype: "date",
+                    formatter: "date", formatoptions: { newformat: "d-M-Y" } },
+                { name: "amount", label: "Cena aranzmana:", template: "number" }
+            ],
+            data: [
+                { id: "10",  invdate: "2023-10-01", name: "Pariz",   amount: "1000.00" },
+                { id: "20",  invdate: "2023-09-22", name: "Rim",  amount: "1200.00"},
+                { id: "30",  invdate: "2023-02-15", name: "Valensija",  amount: "900.00"},
+                { id: "40",  invdate: "2023-07-25", name: "Malta",  amount: "800.00"},
+                { id: "50",  invdate: "2023-07-16", name: "Dominikanska Republika",  amount: "1600.00"},
+                { id: "60",  invdate: "2023-07-18", name: "Maldivi",  amount: "2400.00"},
+                { id: "70",  invdate: "2023-10-04", name: "Barselona",  amount: "1800.00"}
+            ],
+            guiStyle: "bootstrap",
+            iconSet: "fontAwesome",
+            idPrefix: "gb1_",
+            rownumbers: true,
+            sortname: "invdate",
+            sortorder: "desc",
+            caption: "Cena karata"
+        });
+    });
+    //]]>
+    </script>
+
+  <link rel="stylesheet" href="css/css/tabela-grid.css">
+</head>
+
+<body>
+
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <h1 class="logotxt">TRAVELLAND</h1>
+    <button id="meni" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lista" aria-controls="lista"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="lista">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Početna</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Galerija</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="jedan">
+    <div class="naslov">
+      <h2>Najbolja putovanja mozete rezervisati upravo kod nas!</h2>
+     
+    </div>
+    <div class="glavni">
+      <div id="parent1">
+        <a href="#">
+          <img class="akcija" id="image1" src="img/kuba-min.jpg" alt="">
+          <img src="img/kuba-min.png" id="image11" alt="">
+        </a>
+      </div>
+      <div id="parent1">
+        <a href="#">
+          <img class="akcija" id="image1" src="img/japan-min.jpg" alt="">
+          <img src="img/japan-min.png" id="image22" alt="">
+        </a>
+      </div>
+      <div id="parent1">
+        <a href="#">
+          <img class="akcija" id="image1" src="img/barc.jpg" alt="">
+          <img src="img/egipat-min.png" id="image33" alt="">
+        </a>
+      </div>
+      <div id="parent1">
+        <a href="#">
+          <img class="akcija" id="image1" src="img/sanfrancisko-min.jpg" alt="">
+          <img src="img/sanfrancisko-min.png" id="image44" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <table id="grid1b"></table>
+
+
+  <section id="tri">
+    <div class="row red">
+      <div class="col-md-4 ponuda">
+        <h4>NOVA GODINA</h4>
+        <ul>
+          <li>
+            <a href="">Beč</a>
+          </li>
+          <li>
+            <a href="">Prag</a>
+          </li>
+          <li>
+            <a href="">Budimpešta</a>
+          </li>
+          <li>
+            <a href="">Ohrid</a>
+          </li>
+          <li>
+            <a href="">Krakov</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 ponuda">
+        <h4>LETOVANJE</h4>
+        <ul>
+          <li>
+            <a href="">Grčka</a>
+          </li>
+          <li>
+            <a href="">Turska</a>
+          </li>
+          <li>
+            <a href="">Španija</a>
+          </li>
+          <li>
+            <a href="">Italija</a>
+          </li>
+          <li>
+            <a href="">Egipat</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 ponuda">
+        <h4>SPECIJAL</h4>
+       <ul>
+          <li>
+            <a href="">Šri Lanka</a>
+          </li>
+          <li>
+            <a href="">Madagaskar</a>
+          </li>
+          <li>
+            <a href="">Buenos Ajres</a>
+          </li>
+          <li>
+            <a href="">Zanzibar</a>
+          </li>
+          <li>
+            <a href="">Novi Zeland</a>
+          </li>
+        </ul>
+     </div>
+    </div>
+  </section>
+
+
+  <section id="cetiri">
+    <div class="row red">
+      <div class="col-md-4 vizija">
+        <h4>Usluga</h4>
+        <p>Kada jednom stupite u kontakt sa agencijom Travelland, stajaće Vam na raspolaganju lični agent za sva buduća putovanja.
+          Time mislimo na nekog ko će imati privilegiju da upozna Vas i Vaše preferencije oko putovanja. Na osnovu svih partnerstava,
+          koja ostvarujemo sa vodećim turističkim brendovima, imate mogućnost da ostvarite dodatne pogodnosti.
+        </p>
+      </div>
+      <div class="col-md-4 vizija" id="srednji">
+        <h4>Kvalitet</h4>
+        <p>Na osnovu višegodišnjeg iskustva, mi u Travellandu težimo da odaberemo najbolje hotele na svetu i budemo u toku
+          sa svim novitetima. Prilikom odabira hotela, osećamo obavezu da hotelima obezbedimo neophodne informacije kako
+          bi zadovoljili sve Vaše potrebe.
+        </p>
+      </div>
+      <div class="col-md-4 vizija">
+        <h4>Vrednost</h4>
+        <p>Na ovom visoko-konkurentnom tržištu, obezbeđujemo pristojnu cenu u kombinaciji sa izuzetnom uslugom. Odnosi koje
+          ostvarujemo sa najboljim hotelima na svetu, Vam daju za pravo da, kao našim redovnim korisnicima, obezbedimo dodatnu
+          vrednost i vrhunsku uslugu kojima uspevamo da Vam uštedimo vreme.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <a id="back2Top" title="Back to top" href="#">➠</a>
+
+  
+    
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+     
+
+
+      <p class="footer-company-name">Copyright © 2023, Travelland</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>
+          <span>Jove Ilica 154</span> Beograd, Srbija</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+381 11 24 00 113</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p>
+          <a href="mailto:support@company.com">travelland@gmail.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <br>
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <br>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script>
+    $(window).scroll(function () {
+      var height = $(window).scrollTop();
+      if (height > 100) {
+        $('#back2Top').fadeIn();
+      } else {
+        $('#back2Top').fadeOut();
+      }
+    });
+    $(document).ready(function () {
+      $("#back2Top").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: 0
+        }, "slow");
+        return false;
+      });
+
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
